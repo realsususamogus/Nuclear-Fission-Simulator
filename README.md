@@ -3,6 +3,7 @@ Y3 CEP WA3
 More commonly known as  
 # atoms blow up most kids  
 Quite a decent project, though it is quite performance intensive  
+Introduced the new naming system for project iterations 
 ## Features  
 - Play and Help buttons
 - Toggle fission of fission fragments (Unrealistic)
