@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+.mybutton {
+  font-size: 25px;
+  border-color: "yellow";
+  border-radius: 20px;
+  font-family: "Lucida Console", MONOSPACE;
+  background-image: linear-gradient(red,yellow);
+  
+}
+/*styling for the p5.js sliders*/
+label {
+  font-size: 19px;
+  font-family: "Arial";
+  color: #000000;
+  
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: -2px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+/* Style for the p5.js slider */
+.mySlider {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 230px; 
+  height: 10px; 
+  background: linear-gradient(90deg, rgb(26, 188, 156) 0%, rgb(52, 152, 219) 100%); 
+  border-radius: 5px; 
+  outline: none;
+  opacity: 0.9; 
+  transition: opacity .15s ease-in-out; 
+}
+
+.mySlider:hover {
+  opacity: 1;
+}
+
+/* Styling the slider thumb */
+.mySlider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px; 
+  height: 20px; 
+  background: rgb(245, 173, 173); 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: background .3s ease-in-out; 
+}
+
+.mySlider::-webkit-slider-thumb:hover {
+  background: rgb(255, 94, 58); 
+}
+
+.mySlider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: rgb(245, 173, 173);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+
+.mySlider::-moz-range-thumb:hover {
+  background: rgb(255, 94, 58);
+}
+
